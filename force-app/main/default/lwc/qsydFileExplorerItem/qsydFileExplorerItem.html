@@ -1,0 +1,64 @@
+<!--
+ * Copyright (c) 2020, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ -->
+
+
+<template>
+    <div onclick={handleClick} class={itemClass}>
+        <div class="slds-grid itemIcon">
+
+            <!-- File Icon -->
+            <div>
+                <div class="slds-text-align_center slds-p-around_x-small slds-float_left slds-size_1-of-3">
+                    <lightning-icon icon-name={itemIcon} alternative-text={item.text} title={item.text} size="medium">
+                    </lightning-icon>
+                </div>
+            </div>
+
+            <!-- File Text -->
+            <div class="slds-col mobile-files-view" style="align-self: center;">
+                <div class="slds-text-align_left slds-truncate" style="font-size: 0.9rem;"
+                    title={item.text}>
+                    {item.text}
+                </div>
+                <template if:true={isFile}>
+                    <div class="slds-text-align_left slds-truncate" style="font-size: 0.7rem;"
+                        title={item.text}>
+                        {filesize}<template if:true={isContentVersionReady}>, modified {lastModifiedDate}</template>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Option button for files -->
+            <div class="slds-col">
+                <template if:true={isFile}>
+                    <lightning-button-menu class="slds-m-top_small slds-float_right slds-m-right_small" icon-name="utility:down" menu-alignment="right"
+                        icon-size="x-small" alternative-text="Settings" variant="border-filled">
+                        <template if:true={showPreview}>
+                            <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.PREVIEW} value="Preview"
+                                onclick={navigateToFilePreviewPage}>
+                            </lightning-menu-item>
+                        </template>
+                        <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.OPEN_FILE} value="openFile"
+                            onclick={navigateToFileRecordPage}>
+                        </lightning-menu-item>
+                        <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.DOWNLOAD} value="downloadFile"
+                            href={downloadLink}>
+                        </lightning-menu-item>
+                        <!-- ELIMINATED IN REVISIONS - KEPT INCASE NEEDED -->
+                        <!-- <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.EDIT_TAGS} value="editTags"
+                        onclick={handleDialogOpen}>
+                    </lightning-menu-item> -->
+                        <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.DELETE_FILE} value="deleteFile"
+                            onclick={handleFileDelete}>
+                        </lightning-menu-item>
+                    </lightning-button-menu>
+                </template>
+
+            </div>
+        </div>
+    </div>
+</template>

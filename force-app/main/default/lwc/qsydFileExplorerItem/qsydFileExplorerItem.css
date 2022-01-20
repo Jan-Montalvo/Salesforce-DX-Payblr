@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2020, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ */
+
+.itemContainer:hover {
+    cursor: pointer;
+}
+
+
+.mobile-files-view {
+    max-width: 70% !important;
+}
+
+/* ELIMINATED ON REVISIONS - KEPT INCASE ITS NEEDED */
+/* .itemContainer:hover .itemIcon,
+.itemContainer:focus .itemIcon,
+.itemContainer.itemSelected .itemIcon {
+    background-color: rgba(20, 137, 238, 0.1);
+    border-radius: 0.5rem;
+} */
+
+/* .itemContainer:hover .itemLabel,
+.itemContainer:focus .itemLabel,
+.itemContainer.itemSelected .itemLabel {
+    background-color: rgb(20, 137, 238);
+    color: #fff;
+} */

@@ -1,0 +1,22 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "FileExplorer",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.3.NEXT"
+        }
+    ],
+    "name": "Cobalto-PackageDev-Org",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "FileExplorer": "0Ho1K000000PAwtSAG",
+        "FileExplorer@0.1.0-1": "04t1K000002b17hQAA",
+        "FileExplorer@0.1.1-1": "04t1K000002b181QAA",
+        "FileExplorer@0.1.2-1": "04t1K000002b18LQAQ",
+        "FileExplorer@0.1.3-1": "04t1K000002b18QQAQ"
+    }
+}
