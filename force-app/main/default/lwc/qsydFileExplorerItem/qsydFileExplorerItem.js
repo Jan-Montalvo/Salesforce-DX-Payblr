@@ -34,6 +34,7 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 	currentPagePrefix = '';
 	showPreview = true;
 	isFile = false;
+	showModal = false;
 
 	connectedCallback() {
 		this.environmentCheck();
@@ -75,6 +76,18 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 		if (formFactor != 'Large' && this.item.documentId) {
 			// this.navigateToFilePreviewPage();
 		}
+	}
+
+	handleShowModal() {
+		this.showModal = !this.showModal;
+	}
+
+	handleAssignAccount(e) {
+		console.log('Assigning Account Event: ', e);
+	}
+
+	handleAssignContact(e) {
+		console.log('Assigning Contact Event: ', e);
 	}
 
 	handleFileDelete() {

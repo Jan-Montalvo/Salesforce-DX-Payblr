@@ -158,6 +158,8 @@ import DETAIL_LABELS__PREVIEW from '@salesforce/label/c.Detail_Labels_Preview';
 import DETAIL_LABELS__SIZE from '@salesforce/label/c.Detail_Labels_Size';
 import DETAIL_LABELS__TAGS from '@salesforce/label/c.Detail_Labels_Tags';
 import DETAIL_LABELS__TYPE from '@salesforce/label/c.Detail_Labels_Type';
+import DETAIL_LABELS__ASSIGN_ACCOUNT from '@salesforce/label/c.Detail_Labels_Assign_Account';
+import DETAIL_LABELS__ASSIGN_CONTACT from '@salesforce/label/c.Detail_Labels_Assign_Contact';
 
 import DETAIL_MESSAGES__SELECT_FILE
 	from '@salesforce/label/c.Detail_Messages_Select_File';

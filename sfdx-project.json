@@ -5,7 +5,7 @@
             "default": true,
             "package": "FileExplorer",
             "versionName": "ver 0.1",
-            "versionNumber": "0.1.3.NEXT"
+            "versionNumber": "0.1.4.NEXT"
         }
     ],
     "name": "Cobalto-PackageDev-Org",
@@ -17,6 +17,10 @@
         "FileExplorer@0.1.0-1": "04t1K000002b17hQAA",
         "FileExplorer@0.1.1-1": "04t1K000002b181QAA",
         "FileExplorer@0.1.2-1": "04t1K000002b18LQAQ",
-        "FileExplorer@0.1.3-1": "04t1K000002b18QQAQ"
+        "FileExplorer@0.1.3-1": "04t1K000002b18QQAQ",
+        "FileExplorer@0.1.4-1": "04t1K000002b18pQAA",
+        "FileExplorer@0.1.4-2": "04t1K000002b18uQAA",
+        "FileExplorer@0.1.4-3": "04t1K000002b18zQAA",
+        "FileExplorer@0.1.4-4": "04t1K000002b199QAA"
     }
 }

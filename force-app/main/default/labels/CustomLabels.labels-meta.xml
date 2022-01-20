@@ -544,6 +544,22 @@
         <value>Delete File</value>
     </labels>
     <labels>
+        <fullName>Detail_Labels_Assign_Contact</fullName>
+        <categories>Detail Messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Detial Labels - Assign Contact</shortDescription>
+        <value>Assign Contact</value>
+    </labels>
+    <labels>
+        <fullName>Detail_Labels_Assign_Account</fullName>
+        <categories>Detail Messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Detial Labels - Assign Account</shortDescription>
+        <value>Assign Account</value>
+    </labels>
+    <labels>
         <fullName>Search_Category_Files</fullName>
         <categories>Search Category</categories>
         <language>en_US</language>

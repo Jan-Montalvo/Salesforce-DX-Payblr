@@ -45,6 +45,12 @@
                         <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.OPEN_FILE} value="openFile"
                             onclick={navigateToFileRecordPage}>
                         </lightning-menu-item>
+                        <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.ASSIGN_ACCOUNT} value="assignAccount"
+                            onclick={handleAssignAccount}>
+                        </lightning-menu-item>
+                        <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.ASSIGN_CONTACT} value="assignContact"
+                            onclick={handleAssignContact}>
+                        </lightning-menu-item>
                         <lightning-menu-item label={CONSTANTS.DETAIL_LABELS.DOWNLOAD} value="downloadFile"
                             href={downloadLink}>
                         </lightning-menu-item>
@@ -57,8 +63,12 @@
                         </lightning-menu-item>
                     </lightning-button-menu>
                 </template>
-
             </div>
+
+            <template if:true={showModal}>
+                <c-qsyd-compliance-document-modal onmodalclick={handleShowModal}></c-qsyd-compliance-document-modal>
+            </template>
+
         </div>
     </div>
 </template>

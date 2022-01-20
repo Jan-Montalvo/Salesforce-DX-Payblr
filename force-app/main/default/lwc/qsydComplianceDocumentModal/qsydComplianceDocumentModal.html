@@ -1,0 +1,60 @@
+<template>
+   <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+      <button onclick={handleCloseModal} class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+        <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+        </svg>
+        <span class="slds-assistive-text">Cancel and close</span>
+      </button>
+      <div class="slds-modal__header">
+        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Assign Compliance Document</h1>
+      </div>
+      <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <!-- Base Lookup Element -->
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="combobox-id-1" id="combobox-label-id-37">Relate To</label>
+          <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+              <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                  <input type="text" class="slds-input slds-combobox__input" id="combobox-id-1" aria-autocomplete="list" aria-controls="listbox-id-1" aria-expanded="false" aria-haspopup="listbox" autocomplete="off" role="combobox" placeholder="Search..." />
+                  <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                    <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+                  <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                    <!-- Need a Loop Here for all contacts or accounts -->
+                    <li role="presentation" class="slds-listbox__item">
+                      <div id="option1" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                        <span class="slds-media__figure slds-listbox__option-icon">
+                          <span class="slds-icon_container slds-icon-standard-account">
+                            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+                            </svg>
+                          </span>
+                        </span>
+                        <span class="slds-media__body">
+                          <span class="slds-listbox__option-text slds-listbox__option-text_entity">Burlington Textiles Corp of America</span>
+                          <span class="slds-listbox__option-meta slds-listbox__option-meta_entity">Account • Burlington, NC</span>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slds-modal__footer">
+        <button class="slds-button slds-button_neutral" aria-label="Cancel and close">Cancel</button>
+        <button class="slds-button slds-button_brand">Save</button>
+      </div>
+    </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+</template>
