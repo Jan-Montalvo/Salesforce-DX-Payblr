@@ -1,0 +1,18 @@
+<template>
+  <div class="slds-var-m-around_small">
+      <p>Search Component</p>
+      <c-search-component
+          onlookup={handleLookup}
+          fields-to-create={fieldsToCreate}
+          create-record=true
+          parent-a-p-i-name="ParentId"
+          obj-name="Account"
+          display-fields="Name, Phone, ShippingAddress"
+          fields = {fields}
+          show-label=true
+          label-name="Account Name"
+          data-index={index}
+          index={index}>
+      </c-search-component>
+  </div>
+</template>

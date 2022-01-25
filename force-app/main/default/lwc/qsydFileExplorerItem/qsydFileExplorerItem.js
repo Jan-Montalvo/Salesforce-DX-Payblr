@@ -5,8 +5,7 @@
  * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
-
-import {LightningElement, api} from 'lwc';
+import {LightningElement, api, track} from 'lwc';
 import { deleteRecord } from 'lightning/uiRecordApi';
 import formFactor from '@salesforce/client/formFactor';
 import {NavigationMixin} from 'lightning/navigation';
@@ -35,6 +34,13 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 	showPreview = true;
 	isFile = false;
 	showModal = false;
+
+	@track objName = 'Account';
+	@track fieldsToCreate = ['Name','Rating','Phone','Industry', 'AccountNumber'];
+	@track fields = ['Name'];
+	@track displayFields = 'Name, Phone';
+	@track iconName = 'standard:account';
+	@track labelName = 'Account Name';
 
 	connectedCallback() {
 		this.environmentCheck();
@@ -84,10 +90,24 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 
 	handleAssignAccount(e) {
 		console.log('Assigning Account Event: ', e);
+		this.objName = 'Account';
+	  this.fieldsToCreate = ['Name','Rating','Phone','Industry', 'AccountNumber'];
+	  this.fields = ['Name'];
+	  this.displayFields = 'Name, Phone';
+	  this.iconName = 'standard:account';
+		this.labelName = 'Account Name';
+		this.handleShowModal();
 	}
 
 	handleAssignContact(e) {
 		console.log('Assigning Contact Event: ', e);
+		this.objName = 'Contact';
+		this.fieldsToCreate = ['Name','Title','Phone','Department', 'Email'];
+	  this.fields = ['Name'];
+	  this.displayFields = 'Name, Title';
+	  this.iconName = 'standard:contact';
+		this.labelName = 'Contact Name';
+		this.handleShowModal();
 	}
 
 	handleFileDelete() {
