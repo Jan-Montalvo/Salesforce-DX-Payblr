@@ -155,6 +155,10 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 		}
 	}
 
+	get documentId() {
+		return this.item.documentId;
+	}
+
 	get filesize() {
 		if (this.item.size == 0 || this.item.size == null ||
 			isNaN(this.item.size)) {

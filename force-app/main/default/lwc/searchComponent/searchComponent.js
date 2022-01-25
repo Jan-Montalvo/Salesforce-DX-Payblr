@@ -194,24 +194,24 @@ export default class SearchComponent extends NavigationMixin(LightningElement) {
     return sentence;
   }
 
-  handleNewRecord = event => {
+  handleNewRecord(event) {
     event.preventDefault();
     this.showModal = true;
   }
 
-  handleCancel = event => {
+  handleCancel(event) {
     event.preventDefault();
     this.showModal = false;
   }
 
-  handleSuccess = event => {
+  handleSuccess(event) {
     event.preventDefault();
     this.showModal = false;
     let recordId = event.detail.id;
     this.handleCreatedRecord(recordId);
   }
 
-  handleCreatedRecord = (recordId) => {
+  handleCreatedRecord(recordId) {
     getRecentlyCreatedRecord({
       recordId: recordId,
       fields: this.fields,
