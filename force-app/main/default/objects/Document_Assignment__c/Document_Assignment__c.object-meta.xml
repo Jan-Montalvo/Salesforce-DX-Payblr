@@ -143,7 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Will contain compliance documents that need to be shared to other objects but only be visible to selected users.</description>
+    <description>Will contain documents that need to be shared to other objects but only be visible to selected users.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -154,14 +154,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Compliance Document Assignment</label>
+    <label>Document Assignment</label>
     <nameField>
         <displayFormat>{00000000}</displayFormat>
-        <label>Compliance Document Assignment Name</label>
+        <label>Document Assignment Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Compliance Document Assignments</pluralLabel>
+    <pluralLabel>Document Assignments</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

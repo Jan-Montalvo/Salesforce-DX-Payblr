@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Type__c</fullName>
+    <description>Identifies what type of document this document is supposed to represent so it can be controlled through sharing rules. This will state which users will be able to see this file.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This indicates what type of document this file is so its controlled through sharing rules. This allows only some users to view this object.</inlineHelpText>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance Documents</fullName>
+                <default>false</default>
+                <label>Compliance Documents</label>
+            </value>
+            <value>
+                <fullName>HR Documents</fullName>
+                <default>false</default>
+                <label>HR Documents</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

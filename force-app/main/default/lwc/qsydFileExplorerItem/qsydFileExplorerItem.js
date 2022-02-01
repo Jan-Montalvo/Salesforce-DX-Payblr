@@ -91,7 +91,7 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 	handleAssignAccount(e) {
 		console.log('Assigning Account Event: ', e);
 		this.objName = 'Account';
-	  this.fieldsToCreate = ['Name','Rating','Phone','Industry', 'AccountNumber'];
+	  this.fieldsToCreate = ['Name','Phone','Industry', 'AccountNumber'];
 	  this.fields = ['Name'];
 	  this.displayFields = 'Name, Phone';
 	  this.iconName = 'standard:account';
@@ -102,7 +102,7 @@ export default class QsydFileExplorerItem extends NavigationMixin(
 	handleAssignContact(e) {
 		console.log('Assigning Contact Event: ', e);
 		this.objName = 'Contact';
-		this.fieldsToCreate = ['Name','Title','Phone','Department', 'Email'];
+		this.fieldsToCreate = ['Name','Title','Phone','Department', 'Email', 'AccountId', 'Contact_Type__c'];
 	  this.fields = ['Name'];
 	  this.displayFields = 'Name, Title';
 	  this.iconName = 'standard:contact';

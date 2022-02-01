@@ -3,7 +3,7 @@ public without sharing class ComplianceDocumentController {
     public static void createComplianceDocument(string recordId, string type, string fileId) {
         try {
             // --- Create Compliance Document ---
-            Compliance_Document_Assignment__c complainceDocument = new Compliance_Document_Assignment__c();
+            Document_Assignment__c complainceDocument = new Document_Assignment__c();
             if (type == 'Account') {
                 complainceDocument.Account__c = recordId;
             }
