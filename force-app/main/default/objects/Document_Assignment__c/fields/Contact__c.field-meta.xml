@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Contact__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
     <description>Lookup to related Contact.</description>
     <externalId>false</externalId>
     <inlineHelpText>Lookup to related Contact.</inlineHelpText>

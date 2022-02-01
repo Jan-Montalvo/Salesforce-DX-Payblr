@@ -143,6 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
     <description>Will contain documents that need to be shared to other objects but only be visible to selected users.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -156,10 +157,9 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Document Assignment</label>
     <nameField>
-        <displayFormat>{00000000}</displayFormat>
         <label>Document Assignment Name</label>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Document Assignments</pluralLabel>
     <searchLayouts/>
